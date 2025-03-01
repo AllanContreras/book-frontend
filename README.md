@@ -124,6 +124,11 @@ En esta sección, el usuario puede visualizar todas sus reservas activas.
 ---
 
 
+## Diagrama de clases
+
+![Diagrama de clases frontend](https://github.com/user-attachments/assets/785b04fb-cc08-492c-8738-be99ebd68dbd)
+
+
 
 
 
