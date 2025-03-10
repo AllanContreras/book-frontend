@@ -1,73 +1,575 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* ----- Estilos generales ----- */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
   margin: 0;
+  padding: 0;
+}
+
+/* ----- Barra superior con logo ----- */
+.header {
+  background-color: #a6192e; /* Color del rectángulo */
+  width: 100%;
+  height: 110px; /* Ajusta la altura si es necesario */
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center; /* Centra el logo verticalmente */
+  justify-content: flex-start; /* Lo mantiene alineado a la izquierda */
+  padding-left: 20px;
 }
 
+.logo-container img {
+  width: 167px;
+  height: 70px; /* Ajusta el tamaño del logo */
+}
+
+
+
+
+.main-content {
+  margin-top: 50px;
+}
+
+
+/* Título */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  margin-top: 3%;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+
+
+
+
+.login-box {
+  
+  background: white;
+  width: 520px;
+  height: 170px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Campos de entrada */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botón de acceso */
+.login-btn {
+  margin-top: 10%;
+  margin-right: 5%;
+  width: 198.6px;
+  height: 80px;
+  padding: 12px;
+  background: #BFBFBF;
+  color: #676767;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.login-btn-office365 {
+  display: flex;
+  align-items: center;  
+  justify-content: start;
+  margin-left: 15px;
+  margin-top: 10%;
+  width: 198.6px;
+  height: 80px;
+  padding: 12px 20px;
+  background: #BFBFBF;
+  color: #676767;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
 }
+
+.login-btn-office365 img {
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+}
+
+
+.login-btn:hover {
+  background: #A3A3A3;
+}
+
+.login-btn-office365:hover {
+  background: #A3A3A3;
+}
+
+
+
+/*SESION*/
+.login-container{
+  background: white;
+  width: 420px;
+  height: 470px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+h2{ 
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin: 20px 25px; /* Espacio entre el título y los inputs */
+  white-space: nowrap;
+  
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: 70%; /* Se ajusta al contenedor */
+  padding: 10px;
+  margin: 20px 25px; /* Espacio entre los inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  display: block;
+}
+
+
+
+.login-acceder {
+  margin: 10px 25px;
+  
+  width: auto;
+  
+  padding: 10px;
+  background: #a6192e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.login-acceder:hover{
+  background-color: #1d2125;
+}
+
+
+.forgot-password {
+  display: block;
+  margin: 10px 25px 30px;
+  font-size: 13px;
+  color: #a6192e;
+  text-decoration: none;
+  text-align: left;
+
+}
+
+.forgot-password:hover {
+  color: #1d2125;
+}
+
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #ccc; /* Color gris */
+  margin: 20px 25px;
+  width: 87%;
+}
+
+
+
+h4 {
+  font-size: 15px;
+  margin: 20px 25px;
+  font-weight: bold;
+}
+
+
+.login-btn-office365-large {
+  display: flex;
+  align-items: center;  
+  justify-content: start;
+  margin-left: 25px;
+  
+  width: 85%;
+  height: 50px;
+
+  padding: 10px 90px;
+  background: #BFBFBF;
+  color: #676767;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+
+
+}
+
+.login-btn-office365-large img {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.login-btn-office365-large:hover {
+  background: #A3A3A3;
+}
+
+
+
+
+
+
+.Lenguaje {
+  display: block;
+  margin: 10px 25px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #a6192e;
+}
+
+.Lenguaje:hover {
+  color: #1d2125;
+}
+
+
+
+/*PRINCIPAL*/
+
+.header-principal{
+  background-color: white; /* Color del rectángulo */
+  width: 100%;
+  height: 110px; /* Ajusta la altura si es necesario */
+  display: flex;
+  align-items: center; /* Centra el logo verticalmente */
+  justify-content: flex-start; /* Lo mantiene alineado a la izquierda */
+  padding-left: 20px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container-principal img {
+  width: 167px;
+  height: 90px; /* Ajusta el tamaño del logo */
+}
+
+/* Botón de Inicio */
+.btn-inicio {
+  display: flex;
+  align-items: center;  
+  justify-content: start;
+  background-color: #a10d1c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 33%;
+}
+
+.btn-inicio img{
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-inicio:hover{
+  background-color: #900;
+  color:black;
+  border: black;
+  
+  
+}
+
+
+
+
+
+/* Contenedor de opciones */
+.contenedor-opciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px 25%;
+  width: 50%;
+}
+
+/* Estilos para cada opción */
+.opcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid #900; /* Color del borde */
+  background: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #900;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.opcion img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.opcion:hover {
+  background: #900;
+  color: black;
+  border: 2px solid black;
+}
+
+
+
+/*RESREVAS*/ 
+
+.title-image {
+  display: flex;
+  align-items: center; /* Alinea el texto y la imagen verticalmente */
+  gap: 5px; /* Reduce el espacio entre el título y la imagen */
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 100px; /* Elimina el margen excesivo */
+}
+
+.title-image img {
+  width: 30px;
+  height: auto;
+}
+
+
+.contenedor-opciones-reservas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px; /* Reduce el espacio entre las tarjetas */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px auto; /* Centra el contenedor */
+  width: 75%;
+}
+
+.opcion-reservas {
+  width: 270px; /* Ajusta el tamaño de la tarjeta */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: #ddd;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.opcion-reservas img {
+  width: 100%;
+  height: 120px; /* Ajusta la altura de la imagen */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.opcion-reservas .contenido {
+  padding: 10px;
+  background: #ddd; /* Color de fondo inferior */
+}
+
+.opcion-reservas .titulo {
+  font-weight: bold;
+  margin: 5px 0;
+  color: black;
+}
+
+.opcion-reservas .boton-mas-info {
+  color: #900;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.opcion-reservas:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+}
+
+.opcion-reservas .boton-mas-info:hover {
+  text-decoration: underline;
+}
+
+
+
+.btn-mis-reservas {
+  display: flex;
+    
+  justify-content: start;
+  background-color: #a10d1c;
+  color: white;
+  border: 3px;
+  padding: 10px 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.btn-mis-reservas:hover{
+  background-color: #900;
+  color:black;
+  border: black;
+  
+}
+
+
+.lab-disp{
+  font-size: 25px;
+  color: #900;
+}
+
+
+
+/*LABORATORIO*/
+
+
+
+.laboratorio-header {
+  background-color: white; /* Color del rectángulo */
+  width: 100%;
+  height: 110px; /* Ajusta la altura si es necesario */
+  display: flex;
+  align-items: center; /* Centra el logo verticalmente */
+  justify-content: flex-start; /* Lo mantiene alineado a la izquierda */
+  padding-left: 20px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+  
+}
+
+.logo {
+  height: 50px;
+}
+
+.inicio-btn {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.laboratorio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.laboratorio-img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.laboratorio-info {
+  width: 20%;
+  padding: 90px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  color: darkred;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.descripcion{
+  font-size: 20px;
+}
+
+.reservar-btn {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.dias-disponibles {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkred;
+}
+
+
+.horario-tabla {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.horario-tabla td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.horario-row.activo td {
+  background-color: #f9f9f9;
+}
+
+.horario-row.inactivo td {
+  background-color: #f5f5f5;
+  color: #777;
+}
+
+.status-icon {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.status-icon.disponible {
+  color: green;
+}
+
+.status-icon.no-disponible {
+  color: red;
+}
+
