@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/LOGO-ESCING_NEGATIVO-BLANCO.png';
+import Header from '../components/Header';
+
 import microsoftLogo from '../assets/favicon.ico';
 
 const Sesion = () => {
@@ -8,19 +9,15 @@ const Sesion = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate('/principal'); // Redirige a la página principal después del login
+        navigate('/principal'); 
     };
 
     return (
         <div className="sesion-container">
-            {/* Encabezado */}
-            <header className="header">
-                <div className="logo-container">
-                    <img src={logo} alt="Escuela Colombiana de Ingeniería Julio Garavito" />
-                </div>
-            </header>
+            
+            <Header/>
 
-            {/* Contenedor del login */}
+            
             <div className="login-container">
                 <h2>ENTRAR A ESCUELA</h2>
 
@@ -44,7 +41,7 @@ const Sesion = () => {
                 </form>
             </div>
 
-            {/* Volver al inicio */}
+            
             <a href="/" className="volver-inicio">Volver al inicio</a>
         </div>
     );

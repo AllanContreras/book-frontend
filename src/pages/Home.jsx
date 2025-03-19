@@ -1,19 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/LOGO-ESCING_NEGATIVO-BLANCO.png';
+
 import microsoftLogo from '../assets/favicon.ico';
+import Header from '../components/Header';
 
 const Home = () => {
     const navigate = useNavigate();
 
     return (
         <div>
-            {/* Header */}
-            <header className="header">
-                <div className="logo-container">
-                    <img src={logo} alt="Escuela Colombiana de Ingeniería Julio Garavito" />
-                </div>
-            </header>
+            <Header/>
 
             {/* Contenido principal */}
             <main className="main-content">
