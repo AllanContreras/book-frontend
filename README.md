@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Frontend
+# Frontend Reservas Laboratorio
 
 ## Integrantes:
 
@@ -7,26 +6,19 @@
 - David Santiago Castro Sierra
 - Juan David Zambrano Gonzalez
 - Juan Esteban Cely Lopez
-=======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripcion
+Este proyecto consiste en la creación de una aplicación que permita a los usuarios realizar reservas de los laboratorios de Ingenieria de Sistemas
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Apariencia de la Pagina
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> b03526e (Subiendo frontend)
 
-**Apariencia de la Pagina**
 **Mockup Completo**: [Mockup](https://www.figma.com/design/q2bD9KS26JlWBr3UjoFS9R/Untitled?node-id=0-1&t=9AEi33GTFu8xchba-1)
 
 
-**# Pantalla Inicial**
+## Pantalla Inicial
 
 ![Pantalla Inicial](https://github.com/user-attachments/assets/7562d250-e2b6-4e12-8dc1-449064708d73)
 
@@ -121,14 +113,115 @@ En esta sección, el usuario puede visualizar todas sus reservas activas.
 
 ![Consultar Reservas](https://github.com/user-attachments/assets/c98e4138-e1b7-4ba4-9176-75bd608b9e51)
 
----
+## Tecnologías Utilizadas
+
+Este proyecto usa:
+
+- **Vite** para una compilación rápida y optimizada.
+- **React** como librería principal para la interfaz.
+- **ESLint** con reglas personalizadas para mantener calidad de código.
+- **React Router** para manejar la navegación entre páginas.
+- **Axios** para realizar peticiones HTTP al backend.
 
 
-## Diagrama de clases
 
+## Instalacion y Configuracion
+
+1. Clonar el repositorio 
+
+    ```https://github.com/AllanContreras/book-frontend.git```
+
+2. Insatalacion de dependencias 
+
+    ```cd book-frontend```
+
+    ```npm install```
+
+3. Ejecutar proyecto
+
+    ```mpn run dev```
+
+## Uso del Proyecto
+Para utilizar el proyecto, ejecuta el comando `npm run dev` en la terminal. 
+
+Para acceder a la aplicación, ingresa la URL que aparece en la terminal, en el navegador: http://localhost:5173/ 
+
+Al ingresar a la URL se nos dirigira el el navegador donde se estara ejecutando el proyecto y nos encontraremos en la pantalla de inicio de sesion donde debemos ingresar como Usuario o Administrador.
+
+Dependiendo con que tipo de usuario ingresemos tendremos diferentes opciones para cada uno 
+
+### Usuario:
+- Crear Reserva
+- Modificar Reserva
+- Consultar Reservas
+- Eliminar Reserva
+
+### Administrador:
+- Gestionar Reservas
+- Gestionar Usuarios
+- Crear Usuario
+- Eliminar Usuario
+- Actualizar Usuario
+- Consultar Usuario
+
+## Estructura del Proyecto
+
+
+
+- 📦 **BOOK-FRONTEND**
+  - 📂 **src**
+    - 📂 **components** 
+      - 📜 Dashboard.jsx
+      - 📜 HacerReserva.jsx
+      - 📜 Header_B.jsx
+      - 📜 Header.jsx
+      - 📜 Laboratorios.jsx
+      - 📜 Login.jsx
+      - 📜 Navbar.jsx
+      - 📜 Register.jsx
+      - 📜 Reservas.jsx
+      - 📜 Table.jsx
+    - 📂 **context**
+        - 📜 AuthContext.jsx
+    - 📂 **pages** 
+      - 📜 Consultar.jsx
+      - 📜 Eliminar.jsx
+      - 📜 Home.jsx
+      - 📜 Laboratorio.jsx
+      - 📜 Modificar.jsx
+      - 📜 Principal.jsx
+      - 📜 Profile.jsx
+      - 📜 Reservas.jsx
+      - 📜 Sesion.jsx
+     - 📜 App.css 
+     - 📜 App.jsx
+     - 📜 index.css
+     - 📜 main.jsx
+      
+    - 📂 **assets** 
+        - 📂 Images
+  - 📂 **public** 
+    - 📜 vite.svg 
+
+  - 📜 index.html
+  - 📜 .gitignore
+  - 📜 vite.config.js 
+  - 📜 package.json
+  - 📜 package-lock.json
+  - 📜 postcss.config.cjs
+  - 📜 eslint.config.js
+  - 📜 README.md 
+
+
+## Diagramas
+
+
+### Diagrama de Clases
 ![Diagrama de clases frontend](https://github.com/user-attachments/assets/785b04fb-cc08-492c-8738-be99ebd68dbd)
 
+### Diagrama de Componentes
 
+![alt text](src/assets/Diagrama_De_Componentes_CVDS__.png)
 
 
 
