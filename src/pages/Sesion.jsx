@@ -31,7 +31,7 @@ const Sesion = () => {
                     <hr className="divider" />
 
                     <h4>IDENTIFÍQUESE USANDO SU CUENTA EN:</h4> 
-                    <button className="login-btn-office365-large" onClick={() => navigate('/principal')}>
+                    <button className="login-btn-office365-large" onClick={() => navigate('/principal_Admin')}>
                         <img src={microsoftLogo} alt="Microsoft Logo" width="24px" height="24px" className="mr-1" /> Ingreso Office 365
                     </button>  
 
