@@ -221,8 +221,9 @@ Dependiendo con que tipo de usuario ingresemos tendremos diferentes opciones par
 
 ### Diagrama de Componentes
 
-![alt text](src/assets/Diagrama_De_Componentes_CVDS__.png)
 
+
+<img width="650" alt="Diagrama-Componentes" src="https://github.com/user-attachments/assets/0925687f-c48f-49fd-a9cd-36fe6fc018c0" />
 
 
 
