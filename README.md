@@ -217,7 +217,8 @@ Dependiendo con que tipo de usuario ingresemos tendremos diferentes opciones par
 
 
 ### Diagrama de Clases
-![Diagrama de clases frontend](https://github.com/user-attachments/assets/785b04fb-cc08-492c-8738-be99ebd68dbd)
+
+![Diagrama-de-clases-fronted](https://github.com/user-attachments/assets/b2c6b3bf-1eda-4b8f-ac2f-c11fd6984e03)
 
 ### Diagrama de Componentes
 
