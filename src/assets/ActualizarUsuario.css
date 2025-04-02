@@ -1,0 +1,109 @@
+.contenedor {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-usuarios th, .tabla-usuarios td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-usuarios th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-usuarios tr:hover {
+    background-color: #ddd;
+}
+
+.btn-actualizar {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-actualizar:hover {
+    background-color: #005f73;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.fila label {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.fila-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+.btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}

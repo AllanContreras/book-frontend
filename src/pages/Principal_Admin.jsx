@@ -16,7 +16,7 @@ const Principal_Admin = () => {
         <div>
 
         <Header_B/>
-            
+
 
 
 
@@ -32,7 +32,10 @@ const Principal_Admin = () => {
                     <img src={editIcon} alt="Actualizar Usuario" /> Actualizar Usuario
                 </button>
                 <button className="opcion" onClick={() => navigate('/consultar_Usuario')}>
-                    <img src={searchIcon} alt="Consultar Reserva" /> Consultar Usuario
+                    <img src={searchIcon} alt="Consultar Usuario" /> Consultar Usuario
+                </button>
+                <button className="opcion" onClick={() => navigate('/principal')}>
+                    <img src={searchIcon} alt="Consultar Reserva" /> Consultar Reservas
                 </button>
             </div>
         </div>

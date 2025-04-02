@@ -31,7 +31,7 @@ function App() {
                 </Route>
 
                 {/* Rutas protegidas para TEACHER */}
-                <Route element={<ProtectedRoute allowedRoles={["TEACHER"]} />}>
+                <Route element={<ProtectedRoute allowedRoles={["TEACHER", "ADMIN"]} />}>
                     <Route path="/principal" element={<Principal />} />
                     <Route path="/reservas" element={<Reservas />} />
                     <Route path="/laboratorio" element={<Laboratorio />} />
