@@ -21,10 +21,10 @@ const Sesion = () => {
             <div className="login-container">
                 <h2>ENTRAR A ESCUELA</h2>
 
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Nombre de usuario o correo electrónico" name="usuario" required />
-                    <input type="password" placeholder="Contraseña" name="password" required />
-                    <button type="submit" className="login-acceder" onClick={() => navigate('/principal')}>Acceder</button>
+                <form onSubmit={handleSubmit} action="/authenticate" method="POST">
+                    <input type="text" id="username" name="email" placeholder="Nombre de usuario o correo electrónico"  required />
+                    <input type="password" placeholder="Contraseña" id="password" name="password" required />
+                    <button type="submit" value="Login" className="login-acceder" onClick={() => navigate('/principal')}>Acceder</button>
 
                     <a href="#" className="forgot-password">¿Olvidó su contraseña?</a>
 
@@ -37,7 +37,6 @@ const Sesion = () => {
 
                     <hr className="divider" />
 
-                    <a href="#" className="Lenguaje">Español Internacional (es)</a>
                 </form>
             </div>
 
