@@ -193,6 +193,12 @@ Dependiendo con que tipo de usuario ingresemos tendremos diferentes opciones par
       - 📜 Profile.jsx
       - 📜 Reservas.jsx
       - 📜 Sesion.jsx
+      - 📜 Consultar_Usuario.jsx
+      - 📜 Crear_Usuario.jsx
+      - 📜 Eliminar_Usuario.jsx
+      - 📜 Actualizar_Usuario.jsx
+      - 📜 Principal_Admin.jsx
+
      - 📜 App.css 
      - 📜 App.jsx
      - 📜 index.css
